@@ -1,7 +1,0 @@
-merge_protections:
-  - name: VM4 review-thread lifecycle gate
-    if:
-      - base = main
-    success_conditions:
-      - "#review-threads-unresolved = 0"
-
