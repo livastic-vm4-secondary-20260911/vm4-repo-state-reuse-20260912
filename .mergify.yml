@@ -1,0 +1,6 @@
+merge_protections:
+  - name: VM4 base-retarget gate
+    if:
+      - base != vm4-never-base
+    success_conditions:
+      - base = staging
