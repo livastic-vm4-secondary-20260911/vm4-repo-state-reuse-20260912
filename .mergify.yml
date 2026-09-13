@@ -1,0 +1,6 @@
+merge_protections:
+  - name: VM4 reviewer permission revalidation gate
+    if:
+      - base = main
+    success_conditions:
+      - approved-reviews-by = livastic-vm4-secondary-20260911
