@@ -1,0 +1,6 @@
+merge_protections:
+  - name: VM4 locked lifecycle gate
+    if:
+      - base = main
+    success_conditions:
+      - locked
