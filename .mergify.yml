@@ -1,7 +1,0 @@
-merge_queue:
-  mode: serial
-queue_rules:
-  - name: default
-    queue_conditions: true
-    merge_conditions:
-      - title = VM4_STACK_TOP_ALLOWED
