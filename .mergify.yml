@@ -1,0 +1,6 @@
+merge_protections:
+  - name: Current reviewer permission control
+    if:
+      - base = main
+    success_conditions:
+      - approved-reviews-by = livastic-vm4-secondary-20260911
