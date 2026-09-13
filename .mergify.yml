@@ -1,0 +1,7 @@
+merge_protections:
+  - name: VM4 codeowner retarget gate
+    if:
+      - base != nowhere
+    success_conditions:
+      - github-code-owner-review-satisfied
+
