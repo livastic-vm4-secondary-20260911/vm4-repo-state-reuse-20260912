@@ -1,0 +1,11 @@
+name: VM4 shared WA hold
+on:
+  workflow_dispatch:
+
+jobs:
+  hold:
+    name: vm4-shared-wa-hold
+    runs-on: ubuntu-latest
+    steps:
+      - name: trusted completion signal
+        run: echo 'VM4 trusted WA hold completed'

@@ -1,0 +1,7 @@
+extends: shared-policy-clean-a-renamed
+pull_request_rules:
+  - name: VM4 stale shared protection WA merge
+    conditions:
+      - check-success = vm4-shared-wa-hold
+    actions:
+      merge:
