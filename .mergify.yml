@@ -1,6 +1,6 @@
 merge_protections:
-  - name: VM4 schedule expiry gate
+  - name: VM4 schedule expiry gate canonical
     if:
       - base = main
     success_conditions:
-      - schedule = 15:15-15:19[UTC]
+      - schedule = 15:25-15:35[UTC]
