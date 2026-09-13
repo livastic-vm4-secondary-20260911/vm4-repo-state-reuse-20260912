@@ -1,7 +1,0 @@
-merge_protections:
-  - name: VM4 assignee lifecycle gate
-    if:
-      - base = main
-    success_conditions:
-      - assignee = livastic-vm4-primary-20260911
-
