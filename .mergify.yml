@@ -1,5 +1,5 @@
 merge_protections_settings:
-  auto_merge_conditions: true
+  auto_merge_conditions: null
 merge_protections:
   - name: vm4 always satisfied protection
     if:
