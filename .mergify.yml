@@ -1,0 +1,6 @@
+merge_protections:
+  - name: VM4 commits-behind freshness gate
+    if:
+      - base = main
+    success_conditions:
+      - "#commits-behind = 0"
