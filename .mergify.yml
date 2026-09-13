@@ -3,4 +3,4 @@ merge_protections:
     if:
       - base = main
     success_conditions:
-      - current-datetime < 2026-09-13T12:59:50Z
+      - current-datetime < 2026-09-13T13:15:24Z
