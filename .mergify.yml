@@ -1,7 +1,0 @@
-pull_request_rules:
-  - name: vm4 release pattern protection probe
-    conditions:
-      - title = VM4_RELEASE_PATTERN_PROTECTION_TEST
-    actions:
-      merge:
-        method: squash
