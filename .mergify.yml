@@ -1,6 +1,0 @@
-merge_protections:
-  - name: VM4 time-expiry authorization gate
-    if:
-      - base = main
-    success_conditions:
-      - current-datetime < 2026-09-13T13:15:24Z
