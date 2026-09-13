@@ -1,0 +1,6 @@
+merge_protections:
+  - name: VM4 commented-by deletion gate
+    if:
+      - base = main
+    success_conditions:
+      - commented-by = livastic-vm4-primary-20260911
