@@ -1,6 +1,0 @@
-merge_protections:
-  - name: VM4 default-branch source gate v1
-    if:
-      - base = main
-    success_conditions:
-      - base = main
