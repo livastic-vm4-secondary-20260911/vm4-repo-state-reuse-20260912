@@ -1,0 +1,13 @@
+pull_request_rules:
+  - name: vm4 classic protected wildcard probe
+    conditions:
+      - title = VM4_CLASSIC_PROTECTED
+    actions:
+      merge:
+        method: squash
+  - name: vm4 classic unprotected positive control
+    conditions:
+      - title = VM4_CLASSIC_UNPROTECTED
+    actions:
+      merge:
+        method: squash
