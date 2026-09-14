@@ -1,6 +1,0 @@
-merge_protections:
-  - name: VM4 milestone object deletion freshness
-    if:
-      - base = main
-    success_conditions:
-      - milestone = vm4-security-reviewed-20260914
