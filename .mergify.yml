@@ -1,9 +1,0 @@
-pull_request_rules:
-  - name: VM4 cross-job Prevention false-green merge consumer
-    conditions:
-      - base = main
-      - title = VM4-CROSSJOB-FLAKY-PREVENTION-20260916
-      - check-success = @github-actions/VM4 cross-job prevention gate
-    actions:
-      merge:
-        method: merge
