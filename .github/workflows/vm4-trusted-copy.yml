@@ -1,0 +1,26 @@
+name: VM4 Trusted Copy False Green
+on:
+  push:
+    branches:
+      - 'mergify/copy/**'
+
+permissions:
+  contents: read
+
+jobs:
+  trusted-copy:
+    name: VM4 trusted copy false-green
+    runs-on: ubuntu-latest
+    env:
+      MERGIFY_TOKEN: ${{ secrets.MERGIFY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install released Mergify Vitest client
+        run: |
+          npm init -y
+          npm install --no-save vitest@4.1.11 @mergifyio/vitest@0.3.7
+      - name: Run trusted copy gate
+        run: npx vitest run trusted-copy.test.js --config vitest.config.mjs
